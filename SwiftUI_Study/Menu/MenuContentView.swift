@@ -9,24 +9,26 @@ import SwiftUI
 
 struct MenuContentView: View {
 
-  let next: [MenuItem] = [
-    .init(title: "SwiftUI Handbook", nextView: SwiftUIHandBook())
-  ]
-
   var body: some View {
     NavigationView {
       List {
-        ForEach(next) { item in
-          NavigationLink(
-            destination: item.nextView,
-            label: {
-              Text(item.title)
-            }
-          )
-        }
+        NavigationLink(
+          destination: SwiftUIHandBook(),
+          label: {
+            Text("SwiftUI Handbook")
+          }
+        )
+        NavigationLink(
+          destination: CombineView(),
+          label: {
+            Text("SwiftUI Combine and Data")
+          }
+        )
       }
       .navigationBarTitle("SwiftUI - 스터디")
+      .navigationViewStyle(StackNavigationViewStyle())
     }
+
   }
 }
 
@@ -34,10 +36,4 @@ struct MenuContentView_Previews: PreviewProvider {
   static var previews: some View {
     MenuContentView()
   }
-}
-
-struct MenuItem: Identifiable {
-  var id = UUID()
-  var title: String
-  var nextView: SwiftUIHandBook
 }
