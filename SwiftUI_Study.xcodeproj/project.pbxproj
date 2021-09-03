@@ -11,6 +11,10 @@
 		6B492B6726E068D500E067B0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6526E068D500E067B0 /* VisualEffectBlur.swift */; };
 		6B492B6826E068D500E067B0 /* AccountBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6626E068D500E067B0 /* AccountBackground.swift */; };
 		6B492B6A26E06EF700E067B0 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6926E06EF700E067B0 /* TrackableScrollView.swift */; };
+		6B492B6C26E0757600E067B0 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6B26E0757600E067B0 /* MenuRow.swift */; };
+		6B492B6E26E076D800E067B0 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6D26E076D800E067B0 /* GradientIcon.swift */; };
+		6B492B7026E1B32B00E067B0 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B6F26E1B32B00E067B0 /* FAQView.swift */; };
+		6B492B7226E1B34000E067B0 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B7126E1B34000E067B0 /* PackagesView.swift */; };
 		6BBB1EF626D76E2500648E87 /* SwiftUI_StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF526D76E2500648E87 /* SwiftUI_StudyApp.swift */; };
 		6BBB1EF826D76E2500648E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF726D76E2500648E87 /* ContentView.swift */; };
 		6BBB1EFA26D76E2500648E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF926D76E2500648E87 /* Assets.xcassets */; };
@@ -54,6 +58,10 @@
 		6B492B6526E068D500E067B0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		6B492B6626E068D500E067B0 /* AccountBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBackground.swift; sourceTree = "<group>"; };
 		6B492B6926E06EF700E067B0 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		6B492B6B26E0757600E067B0 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		6B492B6D26E076D800E067B0 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
+		6B492B6F26E1B32B00E067B0 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		6B492B7126E1B34000E067B0 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
 		6BBB1EF226D76E2500648E87 /* SwiftUI_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBB1EF526D76E2500648E87 /* SwiftUI_StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StudyApp.swift; sourceTree = "<group>"; };
 		6BBB1EF726D76E2500648E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,9 +125,11 @@
 		6B492B6126E064BE00E067B0 /* SwiftUI Combine and Data */ = {
 			isa = PBXGroup;
 			children = (
+				6B492B7726E1B38B00E067B0 /* Components */,
+				6B492B7626E1B37200E067B0 /* Utils */,
+				6B492B7326E1B34D00E067B0 /* Views */,
 				6B492B6426E068D500E067B0 /* Graphics */,
 				6B492B6226E064CF00E067B0 /* CombineView.swift */,
-				6B492B6926E06EF700E067B0 /* TrackableScrollView.swift */,
 			);
 			path = "SwiftUI Combine and Data";
 			sourceTree = "<group>";
@@ -131,6 +141,48 @@
 				6B492B6626E068D500E067B0 /* AccountBackground.swift */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		6B492B7326E1B34D00E067B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B6F26E1B32B00E067B0 /* FAQView.swift */,
+				6B492B7126E1B34000E067B0 /* PackagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B492B7426E1B35700E067B0 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B6B26E0757600E067B0 /* MenuRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		6B492B7526E1B35F00E067B0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B6D26E076D800E067B0 /* GradientIcon.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6B492B7626E1B37200E067B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B6926E06EF700E067B0 /* TrackableScrollView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6B492B7726E1B38B00E067B0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B7526E1B35F00E067B0 /* Other */,
+				6B492B7426E1B35700E067B0 /* Rows */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		6BBB1EE926D76E2500648E87 = {
@@ -387,12 +439,16 @@
 			files = (
 				6BBB1EF826D76E2500648E87 /* ContentView.swift in Sources */,
 				6B492B6826E068D500E067B0 /* AccountBackground.swift in Sources */,
+				6B492B6C26E0757600E067B0 /* MenuRow.swift in Sources */,
 				6BBB1F2A26D871CD00648E87 /* SwiftUIHandBook.swift in Sources */,
 				6BBB1EF626D76E2500648E87 /* SwiftUI_StudyApp.swift in Sources */,
 				6B492B6726E068D500E067B0 /* VisualEffectBlur.swift in Sources */,
 				6BBB1F2426D8709300648E87 /* MenuContentView.swift in Sources */,
+				6B492B7226E1B34000E067B0 /* PackagesView.swift in Sources */,
+				6B492B6E26E076D800E067B0 /* GradientIcon.swift in Sources */,
 				6B492B6326E064CF00E067B0 /* CombineView.swift in Sources */,
 				6B492B6A26E06EF700E067B0 /* TrackableScrollView.swift in Sources */,
+				6B492B7026E1B32B00E067B0 /* FAQView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
