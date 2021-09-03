@@ -30,6 +30,8 @@ struct CombineView: View {
 
   var content: some View {
     VStack {
+      ProfileRow()
+      
       VStack {
         NavigationLink(destination: FAQView()) {
           MenuRow()
@@ -48,14 +50,7 @@ struct CombineView: View {
         })
 
       }
-      .padding(16)
-      .background(Color("Background 1"))
-      .background(VisualEffectBlur(blurStyle: .systemUltraThinMaterialDark))
-      .overlay(
-        RoundedRectangle(cornerRadius: 20, style: .continuous)
-          .stroke(Color.white, lineWidth: 1)
-          .blendMode(.overlay))
-      .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
+      .blurBackground()
       .padding(.top, 20)
 
       Text("Version 1.00")
