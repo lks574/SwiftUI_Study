@@ -21,6 +21,8 @@
 		6B492B8126E1C28900E067B0 /* faqData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B492B8026E1C28900E067B0 /* faqData.json */; };
 		6B492B8326E1C31400E067B0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B8226E1C31400E067B0 /* ModelData.swift */; };
 		6B492B8526E1C43700E067B0 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B8426E1C43700E067B0 /* FAQRow.swift */; };
+		6B492B8826E1C7E200E067B0 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B8726E1C7E200E067B0 /* PrimaryButton.swift */; };
+		6B492B8A26E1C8BF00E067B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B492B8926E1C8BF00E067B0 /* Extensions.swift */; };
 		6BBB1EF626D76E2500648E87 /* SwiftUI_StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF526D76E2500648E87 /* SwiftUI_StudyApp.swift */; };
 		6BBB1EF826D76E2500648E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF726D76E2500648E87 /* ContentView.swift */; };
 		6BBB1EFA26D76E2500648E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBB1EF926D76E2500648E87 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		6B492B8026E1C28900E067B0 /* faqData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faqData.json; sourceTree = "<group>"; };
 		6B492B8226E1C31400E067B0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6B492B8426E1C43700E067B0 /* FAQRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRow.swift; sourceTree = "<group>"; };
+		6B492B8726E1C7E200E067B0 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		6B492B8926E1C8BF00E067B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6BBB1EF226D76E2500648E87 /* SwiftUI_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBB1EF526D76E2500648E87 /* SwiftUI_StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StudyApp.swift; sourceTree = "<group>"; };
 		6BBB1EF726D76E2500648E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 			children = (
 				6B492B6926E06EF700E067B0 /* TrackableScrollView.swift */,
 				6B492B8226E1C31400E067B0 /* ModelData.swift */,
+				6B492B8926E1C8BF00E067B0 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 		6B492B7726E1B38B00E067B0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6B492B8626E1C7D900E067B0 /* Buttons */,
 				6B492B7526E1B35F00E067B0 /* Other */,
 				6B492B7426E1B35700E067B0 /* Rows */,
 			);
@@ -217,6 +223,14 @@
 				6B492B8026E1C28900E067B0 /* faqData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B492B8626E1C7D900E067B0 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				6B492B8726E1C7E200E067B0 /* PrimaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		6BBB1EE926D76E2500648E87 = {
@@ -472,12 +486,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B492B8826E1C7E200E067B0 /* PrimaryButton.swift in Sources */,
 				6BBB1EF826D76E2500648E87 /* ContentView.swift in Sources */,
 				6B492B8526E1C43700E067B0 /* FAQRow.swift in Sources */,
 				6B492B6826E068D500E067B0 /* AccountBackground.swift in Sources */,
 				6B492B6C26E0757600E067B0 /* MenuRow.swift in Sources */,
 				6BBB1F2A26D871CD00648E87 /* SwiftUIHandBook.swift in Sources */,
 				6BBB1EF626D76E2500648E87 /* SwiftUI_StudyApp.swift in Sources */,
+				6B492B8A26E1C8BF00E067B0 /* Extensions.swift in Sources */,
 				6B492B8326E1C31400E067B0 /* ModelData.swift in Sources */,
 				6B492B6726E068D500E067B0 /* VisualEffectBlur.swift in Sources */,
 				6BBB1F2426D8709300648E87 /* MenuContentView.swift in Sources */,
